@@ -1,0 +1,22 @@
+pack_name: objects
+display_name: Tech Objects
+description: Predict which tech device the AI will choose.
+labels:
+  - id: headphones
+    text: headphones
+    aliases: [headset]
+  - id: microphone
+    text: microphone
+    aliases: [mic]
+  - id: camera
+    text: camera
+    aliases: []
+  - id: speaker
+    text: speaker
+    aliases: [audio speaker]
+  - id: remote_control
+    text: remote control
+    aliases: [remote]
+  - id: game_controller
+    text: game controller
+    aliases: [controller, gamepad]

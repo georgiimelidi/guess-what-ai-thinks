@@ -1,0 +1,72 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# MacOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Jupyter (if used)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# ML / HuggingFace / Torch
+# =========================
+.cache/
+**/.cache/
+huggingface/
+transformers_cache/
+
+# Model files (VERY IMPORTANT)
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# =========================
+# Data (adjust depending on your choice)
+# =========================
+
+# Ignore generated metadata (safe to regenerate)
+data/packs/*/metadata.csv
+
+# Optional: if you later want lighter repo
+# data/packs/*/images/
+
+# =========================
+# VSCode / IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.tmp

@@ -1,0 +1,16 @@
+pack_name: illusions
+display_name: Illusions
+description: Predict which broad category the AI thinks it sees in a visually deceptive image.
+labels:
+  - id: animal
+    text: animal
+    aliases: [creature, wildlife]
+  - id: human
+    text: human
+    aliases: [person, face]
+  - id: food
+    text: food
+    aliases: [meal, dish]
+  - id: object
+    text: object
+    aliases: [item, thing]

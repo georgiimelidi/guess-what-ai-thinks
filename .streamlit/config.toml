@@ -1,0 +1,10 @@
+[theme]
+base = "light"
+primaryColor = "#E85D75"
+backgroundColor = "#F7F4EF"
+secondaryBackgroundColor = "#EEE6DA"
+textColor = "#1F2430"
+linkColor = "#C4576E"
+
+[server]
+runOnSave = true

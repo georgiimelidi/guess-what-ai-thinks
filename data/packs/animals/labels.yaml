@@ -1,0 +1,22 @@
+pack_name: animals
+display_name: Animals
+description: Predict which animal label the AI will choose.
+labels:
+  - id: dog
+    text: dog
+    aliases: [puppy, canine]
+  - id: wolf
+    text: wolf
+    aliases: [grey wolf, wild wolf]
+  - id: fox
+    text: fox
+    aliases: [red fox]
+  - id: cat
+    text: cat
+    aliases: [kitten, house cat]
+  - id: raccoon
+    text: raccoon
+    aliases: []
+  - id: bear
+    text: bear
+    aliases: []

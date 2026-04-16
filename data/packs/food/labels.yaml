@@ -1,0 +1,22 @@
+pack_name: food
+display_name: Food
+description: Predict which food label the AI will choose.
+labels:
+  - id: muffin
+    text: muffin
+    aliases: []
+  - id: cupcake
+    text: cupcake
+    aliases: []
+  - id: croissant
+    text: croissant
+    aliases: []
+  - id: bread
+    text: bread
+    aliases: [loaf]
+  - id: dumpling
+    text: dumpling
+    aliases: []
+  - id: fried_chicken
+    text: fried chicken
+    aliases: [crispy chicken]
