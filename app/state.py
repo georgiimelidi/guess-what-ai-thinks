@@ -32,7 +32,8 @@ def reset_game_state(pack_name: str, questions: List[MetadataRow]) -> None:
     shuffled = questions[:]
     random.shuffle(shuffled)
 
-    selected_questions = shuffled[: min(config.QUESTIONS_PER_GAME, len(shuffled))]
+    questions_per_game = getattr(config, "QUESTIONS_PER_GAME", 10)
+    selected_questions = shuffled[: min(questions_per_game, len(shuffled))]
 
     st.session_state.selected_pack = pack_name
     st.session_state.questions = selected_questions
