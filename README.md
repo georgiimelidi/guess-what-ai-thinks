@@ -1,5 +1,7 @@
 # Guess What the AI Thinks
 
+**Live Demo:** https://guess-what-ai-thinks.streamlit.app/
+
 An interactive game where you try to predict what a vision-language model will say about an image.
 
 This is not about guessing the correct answer.  
