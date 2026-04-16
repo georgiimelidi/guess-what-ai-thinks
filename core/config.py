@@ -7,6 +7,7 @@ MODEL_NAME = "google/siglip2-base-patch16-224"
 DEFAULT_TOP_K = 3
 NUM_OPTIONS = 4
 RANDOM_SEED = 42
+QUESTIONS_PER_GAME = 10
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 

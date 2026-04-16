@@ -52,7 +52,9 @@ def run() -> None:
     pack_config, questions = load_pack_questions(selected_pack)
 
     st.write(f"**Pack:** {pack_config.display_name}")
-    st.caption(pack_config.description)
+    st.caption(f"{pack_config.description} 10 images per game.")
+
+    # st.info("Each game consists of 10 random images from this pack.")
 
     if not questions:
         st.warning("This pack has no approved questions yet.")

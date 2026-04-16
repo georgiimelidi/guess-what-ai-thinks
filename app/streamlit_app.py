@@ -9,7 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from app.pages import play_page, stats_page, validator_page
+from app.pages import about_page, play_page, stats_page, validator_page
 from app.state import init_state
 from app.ui import inject_css, render_footer
 
@@ -30,6 +30,7 @@ def main() -> None:
     pages = [
         st.Page(play_page.run, title="Play", icon="🎮", url_path="play", default=True),
         st.Page(stats_page.run, title="Stats", icon="📊", url_path="stats"),
+        st.Page(about_page.run, title="About", icon="ℹ️", url_path="about"),
     ]
 
     if show_validator:

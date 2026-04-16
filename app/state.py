@@ -29,12 +29,16 @@ def init_state() -> None:
 
 
 def reset_game_state(pack_name: str, questions: List[MetadataRow]) -> None:
+    from core.config import QUESTIONS_PER_GAME
+
     shuffled = questions[:]
     random.shuffle(shuffled)
 
+    selected_questions = shuffled[: min(QUESTIONS_PER_GAME, len(shuffled))]
+
     st.session_state.selected_pack = pack_name
-    st.session_state.questions = questions
-    st.session_state.remaining_questions = shuffled
+    st.session_state.questions = selected_questions
+    st.session_state.remaining_questions = selected_questions[:]
     st.session_state.current_question = None
     st.session_state.revealed = False
     st.session_state.user_choice = None
