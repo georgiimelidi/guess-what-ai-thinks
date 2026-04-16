@@ -6,6 +6,7 @@ from typing import List, Optional
 import streamlit as st
 
 from core.config import RANDOM_SEED
+from core.config import QUESTIONS_PER_GAME
 from core.schema import MetadataRow
 
 
@@ -29,7 +30,7 @@ def init_state() -> None:
 
 
 def reset_game_state(pack_name: str, questions: List[MetadataRow]) -> None:
-    from core.config import QUESTIONS_PER_GAME
+
 
     shuffled = questions[:]
     random.shuffle(shuffled)
