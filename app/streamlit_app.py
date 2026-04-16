@@ -25,11 +25,23 @@ def main() -> None:
     init_state()
     inject_css()
 
+    show_validator = st.query_params.get("admin") == "1"
+
     pages = [
         st.Page(play_page.run, title="Play", icon="🎮", url_path="play", default=True),
         st.Page(stats_page.run, title="Stats", icon="📊", url_path="stats"),
-        st.Page(validator_page.run, title="Validator", icon="✅", url_path="validator"),
     ]
+
+    if show_validator:
+        pages.append(
+            st.Page(
+                validator_page.run,
+                title="Validator",
+                icon="✅",
+                url_path="validator",
+            )
+        )
+
     pg = st.navigation(pages)
     pg.run()
 
