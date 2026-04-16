@@ -2,6 +2,8 @@
 
 **Live Demo:** https://guess-what-ai-thinks.streamlit.app/
 
+![Application demo](assets/demo_guess-what-ai-thinks.gif)
+
 An interactive game where you try to predict what a vision-language model will say about an image.
 
 This is not about guessing the correct answer.  
@@ -53,12 +55,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python -m streamlit run app/streamlit_app.py
 ```
-
----
-
-## Example
-
-![Application demo](assets/demo_guess-what-ai-thinks.gif)
 
 ---
 
