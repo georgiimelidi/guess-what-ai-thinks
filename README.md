@@ -58,7 +58,7 @@ python -m streamlit run app/streamlit_app.py
 
 ## Example
 
-![Application screenshot](assets/screenshot.png)
+![Application demo](assets/demo_guess-what-ai-thinks.gif)
 
 ---
 
