@@ -84,6 +84,12 @@ def run() -> None:
             st.rerun()
         return
 
+    total = len(st.session_state.questions)
+    current = st.session_state.round_index
+
+    st.caption(f"Round {current} / {total}")
+    st.progress(current / total)
+
     render_question(question)
 
     if st.session_state.revealed and render_next_button():
